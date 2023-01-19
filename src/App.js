@@ -21,6 +21,7 @@ function App() {
     setHeight(inputHeight);
   };
 
+  //bmi calc form
   const output = useMemo(() => {
     const calcHeight = height / 100;
 
@@ -29,35 +30,34 @@ function App() {
 
   return (
     <>
-    <main>
-      <h1>BMI Calculator</h1>
-      <div className="input-container">
-        <p className="info">Weight:</p>
-        <input
-          className="input-value"
-          onChange={onWeightChange}
-          type="number"
-          step="1"
-          min="30"
-          max="220"
-        />
+      <main>
+        <h1>BMI Calculator</h1>
+        <div className="input-container">
+          <p className="info">Weight (Kg):</p>
+          <input
+            className="input-value"
+            onChange={onWeightChange}
+            type="number"
+            step="1"
+            min="30"
+            max="220"
+          />
 
-        <p className="info">Height:</p>
-        <input
-          className="input-value"
-          onChange={onHeightChange}
-          type="number"
-          min="140"
-          max="220"
-        />
-      </div>
+          <p className="info">Height (cm):</p>
+          <input
+            className="input-value"
+            onChange={onHeightChange}
+            type="number"
+            min="140"
+            max="220"
+          />
+        </div>
 
-      <div className="output-container">
-        <p>Your BMI is: </p>
-        <p className="output">{output}</p>
-      </div>
-    </main>
-    
+        <div className="output-container">
+          <p>Your BMI is: </p>
+          <p className="output">{output}</p>
+        </div>
+      </main>
     </>
   );
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #7B89AE;
+    background-color: #2F426C;
 }
 
 main {
@@ -13,17 +13,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #e2d9d7;
     width: 90vw;
     max-width: 500px;
     margin: 0 auto;
     margin-top: 50px;
     padding-bottom: 20px;
-    border-radius: 8px;
 }
 
 h1 {
-    background-color: #2F426C;
+    background-color: #9E2D5B;
     color: #fff;
     width: 100%;
     margin-bottom: 10px;
@@ -34,7 +33,7 @@ h1 {
 .output {
     padding: 10px 5px;
     border-radius: 1000px;
-    background-color: #2F426C;
+    background-color: #9E2D5B;
     color: #fff;
     margin-top: 10px;
 }
