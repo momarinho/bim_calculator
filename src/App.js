@@ -28,12 +28,13 @@ function App() {
   }, [weight, height]);
 
   return (
+    <>
     <main>
       <h1>BMI Calculator</h1>
-      <div className="input">
-        <p className="info">Weight: {weight} kg</p>
+      <div className="input-container">
+        <p className="info">Weight:</p>
         <input
-          className="input-slider"
+          className="input-value"
           onChange={onWeightChange}
           type="number"
           step="1"
@@ -41,9 +42,9 @@ function App() {
           max="220"
         />
 
-        <p className="info">Height: {height} cm</p>
+        <p className="info">Height:</p>
         <input
-          className="input-slider"
+          className="input-value"
           onChange={onHeightChange}
           type="number"
           min="140"
@@ -51,11 +52,13 @@ function App() {
         />
       </div>
 
-      <div>
+      <div className="output-container">
         <p>Your BMI is: </p>
         <p className="output">{output}</p>
       </div>
     </main>
+    
+    </>
   );
 }
 
